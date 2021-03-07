@@ -1,0 +1,54 @@
+.btn{
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    /* font-size: 1.25em; */
+    outline: none;
+    font-size: 25px;
+    padding: 20px 25px;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover{
+  transition: .3s ease-in-out;
+  color: rgba(255, 255, 255, 1);
+}
+.btn.delete:hover{
+  transition: .3s ease-in-out;
+  color: rgb(255, 0, 0, .75);
+}
+
+.list-item{
+  margin: 10px;
+  list-style-type: none;
+}
+
+.todo-task{
+    background-color: #3b414d;
+    border-radius: 0 40px;
+    font-size: 1.25em;
+    transition: 0.2s ease-in-out;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .todo-task:hover.done{
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  }
+
+  .done, .done .task-text{
+    text-decoration: line-through;
+    border-radius: 0 40px;
+    color:rgba(255, 255, 255, 0.1);
+    background-color: rgba(59, 65, 77, 0.1) !important;
+  }
+
+  .task-text{
+    padding: 20px 35px;
+    width: 100%;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+  }
