@@ -16,16 +16,22 @@ $ npm install
 ```
 Run it.
 ``` bash
-npm start
+$ npm start
 ```
+
+## What new
+- Added base for login and user authorization
+- Added base for task editing
+- Navigation bar with dropdown user menu
+
+## Fixed
+- Fixed task removing
 
 ## Next updates
 - Firebase connection
-- Task rename
+- Task editing
 - Task deadline
-
-## Known bugs
-- Last task is removed independently from removing selected task
+- Animation on add/remove task
 
 ## Authors
 - Marcel Moś - Development
