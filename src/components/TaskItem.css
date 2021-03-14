@@ -52,3 +52,24 @@
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;
   }
+
+  .input-edit{
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #484f5e;
+    width: 50vw;
+    color: #fff;
+    padding: 10px;
+    transition: .3s ease-in-out;
+  }
+
+  .input-edit:focus{
+    outline: none;
+    transition: .3s ease-in-out;
+    border-bottom: solid 2px rgb(197, 197, 197);
+  }
+
+  .editing-task{
+    box-shadow: 0 2px 5px rgba(0, 247, 255, 0.5);
+  }

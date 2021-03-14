@@ -5,14 +5,11 @@ import uuid from 'react-uuid';
 const todoTasks = [];
 todoTasks.push({ name: 'Learn React', isDone: false, taskDate: new Date().toLocaleString(), id: uuid() });
 todoTasks.push({ name: 'Wake up', isDone: true, taskDate: new Date().toLocaleString(), id: uuid() });
+todoTasks.push({ name: 'Add Firebase connection', isDone: false, taskDate: new Date().toLocaleString(), id: uuid() });
+todoTasks.push({ name: 'Animation on add/remove (from left to center when added, from center to right when removed)', isDone: false, taskDate: new Date().toLocaleString(), id: uuid() });
+todoTasks.push({ name: 'Task editing', isDone: false, taskDate: new Date().toLocaleString(), id: uuid() });
 todoTasks.push({
   name: 'Find a job as a Frontend Developer',
-  isDone: false,
-  taskDate: new Date().toLocaleString(),
-  id: uuid(),
-});
-todoTasks.push({
-  name: 'Repair task remove system in app. (Remove last task indepedently for pressed task)',
   isDone: false,
   taskDate: new Date().toLocaleString(),
   id: uuid(),
@@ -50,19 +47,19 @@ class TaskList extends Component {
   }
 
   deleteTask(id) {
-    console.log(`to remove: ${id}`);
+    // console.log(`to remove: ${id}`);
     this.setState((prevState) => ({
       todoTasks: prevState.todoTasks.filter((task) => {
-        console.log(`name = ${task.name}, id=${task.id}`);
+        // console.log(`name = ${task.name}, id=${task.id}`);
         return task.id !== id;
       }),
     }));
-    console.log(`updated state?? = ${[...this.state.todoTasks]}`);
+    // console.log(`updated state?? = ${[...this.state.todoTasks]}`);
   }
 
   render() {
-    console.log('Render called from TaskList.js');
-    console.log(this.state.todoTasks);
+    // console.log('Render called from TaskList.js');
+    // console.log(this.state.todoTasks);
     return (
       <div>
         <section className='input-field'>

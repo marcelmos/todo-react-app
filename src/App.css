@@ -8,6 +8,10 @@
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
 }
 
+.container{
+  margin-top: 125px;
+}
+
 .task-list{
   padding: 5% 10%;
 }
@@ -52,3 +56,38 @@
   display: flex;
 }
 
+/* LOGIN FORM */
+.login-form{
+  width: 500px;
+  background-color: #313641;
+  padding: 25px 15px;
+  border-radius: 15px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.login-item{
+  display: inline-block;
+  width: 95%;
+  margin: 20px auto;
+}
+
+.login-submit{
+  background-color: #3a6c8d;
+  border-radius: 50px;
+  width: 100%;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  transition: ease-in-out .3s;
+}
+
+.login-submit:hover{
+  background-color: #3a8d5f;
+  transition: ease-in-out .3s;
+  box-shadow: 0 0 10px rgba(58, 141, 95, 0.75);
+}
+
+.form{
+  padding: 10px;
+}
